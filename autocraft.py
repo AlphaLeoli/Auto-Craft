@@ -38,6 +38,8 @@ def craftIron():
         x, y = pyautogui.center(ironLocation)
         pyautogui.click(x, y)
         pyautogui.moveTo(200, 200)
+        ironLocation = pyautogui.locateOnScreen(iron_ingot)
+        x, y = pyautogui.center(ironLocation)
         for i in range(5):
             pyautogui.click(x, y)
         craftMinecart()
